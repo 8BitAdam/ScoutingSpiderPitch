@@ -1,0 +1,29 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1.5rem;
+}
+
+.cards > section,
+.cards > figure {
+    margin: 0;
+    background-color: var(--main-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow);
+}
+
+.cards > section > figure {
+    height: 400px;
+}
+
+.cards > section > div {
+    padding: 1rem;
+}
+
+.cards > section > div > header {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--color-dark);
+    border-bottom: 1px solid var(--border-color);
+}
